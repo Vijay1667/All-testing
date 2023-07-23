@@ -1,0 +1,207 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage[left=2cm, right=2cm, top=2cm]{geometry}
+    \usepackage{longtable}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+    \vspace*{-40pt}
+
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \vspace*{-2pt}
+  \begin{center}
+    {\Huge \scshape {Vijay Narayan Reddy Madireddy}}\\
+    \vspace*{2pt}
+    
+    \vspace*{2pt}
+    \href{mailto:reddyvijay1667@gmail.com}{reddyvijay1667@gmail.com} | \href{tel:+91 6281376895}{+91 6281376895} | Guntur, Andhra Pradesh\\
+    \vspace*{2pt}
+    \textbf{\href{https://github.com/Vijay1667}{GitHub | }}\textbf{\href{https://www.linkedin.com/in/vijay-reddy-160mv/}{Linkedin | }}\textbf{\href{https://leetcode.com/reddyvijay1667/}{LeetCode | }}\textbf{\href{https://www.hackerrank.com/reddyvijay1667?hr\_r=1}{HackerRank}}\\
+  \end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Education
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Education}
+      \vspace{2mm}
+      \textbf{Vellore Institute of Technology, Amaravati}\\
+Bachelors of Technology - Computer Science and Engineering \hfill August 2020 - August 2024\\
+{\sl CGPA: 9.28}\\
+\vspace{2mm}
+\textbf{Bhashyam Junior College, Guntur}\\
+Class 12 \hfill 2018 - 2020\\
+{\sl CGPA: 9.88}\\
+\vspace{2mm}
+% \textbf{Bhashyam High School, Guntur}\\
+% Class 10 \hfill 2017 - 2018\\
+% {\sl CGPA: 10}\\
+% \vspace{2mm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \header{Skills}
+  \vspace{2mm}
+  \begin{longtable}{p{4cm}p{12cm}}
+  Programming Languages: & Java, PHP, JavaScript, HTML, CSS \\
+  Libraries/Frameworks: & React.js, express.js, Bootstrap, node.js \\
+  Tools / Platforms: & Git, Docker, Postman, Figma  \\
+  Databases: & Oracle SQL, MongoDB, MySQL, Firebase \\
+  \end{longtable}
+  \vspace{1mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Projects
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Projects / Open-Source}
+      \vspace{2mm}
+      {\textbf{Coding Platform}}\textbf{ | \href{https://adv-react.vercel.app/}{Link}}\hfill{\sl React.js, firebase, Bootstrap, Docker}\\
+          \vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+\item[] I have created a prototype of coding platform using Reactjs, firebase with google login auth. You can submit the code and verify testcases and earn points.
+\end{itemize}
+          \vspace*{2mm}
+      {\textbf{Real-time Chat Application with ROOMS}}\textbf{ | \href{https://github.com/Vijay1667/chat-application}{Link}}\hfill{\sl React.js, Firebase}\\
+          \vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+\item[] This application allows uses to chat by creating rooms w and then inviting them with roomid. Done by using Reactjs, Bootstrap, with firebase as backend database.
+\end{itemize}
+          \vspace*{2mm}
+      {\textbf{Chat-GPT Whatsapp bot}}\textbf{ | \href{https://github.com/Vijay1667/Chat-GPT-Whatsapp-Bot-}{Link}}\hfill{\sl pywebio, Glitch webhook, OpenAI API}\\
+          \vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+\item[] Done by using Javascript. I have created a webhook using glitch webhook that listens everytime I send a messsage to the bot and the used openai API to retrieve the result and send it to user.
+\end{itemize}
+          \vspace*{2mm}
+      {\textbf{ChatGPT web Interface}}\textbf{ | \href{https://vijay-chatgpt.vercel.app/}{Link}}\hfill{\sl pywebio OpenAI API}\\
+          \vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+\item[] I have created a interface for using chatGPT. it can chat seamlessly and also generate images of the provided prompt. You can select the number of images to be generated and can also switch between the models.
+\end{itemize}
+          \vspace*{2mm}
+      {\textbf{E-Commerce Website}}\hfill{\sl HTML, PHP, Bootstrap, SQL}\\
+
+\vspace*{2mm}
+      {\textbf{Face Detection \& Object Detection}}\textbf{ | \href{https://vijay-object-detection.vercel.app/}{Link}}\hfill{\sl HTML, JavaScript, Bootstrap, Tensorflowjs}\\
+
+\vspace*{2mm}
+      {\textbf{Instagram UI clone}}\hfill{\sl Figma}\\
+
+\vspace*{2mm}
+      {\textbf{Designed my Club (Women in open source) Website}}\hfill{\sl HTML, Bootstrap}\\
+
+\vspace*{2mm}
+      
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %
+      %     Certifications
+      %
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Certifications}
+      \vspace{2mm}
+      • 300+ Problems solved in Leetcode - \textbf{\href{https://leetcode.com/reddyvijay1667/}{LeetCode}}\\
+\vspace*{1mm}
+      • Problem Solving (Basic) - \textbf{\href{https://www.hackerrank.com/certificates/fd54720428ca}{HackerRank}}\\
+\vspace*{1mm}
+      • SQL (Basic) - \textbf{\href{https://www.hackerrank.com/certificates/fa059fcac1ad}{HackerRank}}\\
+\vspace*{1mm}
+      • Java (Basic) - \textbf{\href{https://www.hackerrank.com/certificates/1c7fb5da764f}{HackerRank}}\\
+\vspace*{1mm}
+      • Kick Start Round A, F, G 2022 - \textbf{\href{https://drive.google.com/file/d/1wW5pumlvXhk1Hz\_PRRUtEiM2pje5NQ3S/view?usp=share\_link}{Google}}\\
+\vspace*{1mm}
+      • Meta HackerCup 2022 - \textbf{\href{https://drive.google.com/file/d/1UauRImdSYiJi8-p9xI4TLVS0PDilKF2Q/view}{Meta}}\\
+\vspace*{1mm}
+      • Code Jam Round-1 2022 - \textbf{\href{https://drive.google.com/file/u/1/d/1Xr-qLMdwrGhjHZ\_EW7ynSL\_5lyUTWGJs/view?usp=sharing}{Google}}\\
+\vspace*{1mm}
+      \vspace{2mm}
+
+      \header{Clubs \& Chapters}
+      \vspace{2mm} 
+      Technical Lead at Women in Open Source (WiOS) club \hfill September 2022 - January 2023\\
+      \begin{itemize} \itemsep -3pt
+      \item[] I have created a prototype of coding platform using Reactjs, firebase with google login auth. You can submit the code and verify testcases and earn points.
+      \end{itemize}
+\vspace*{1mm}
+
+    \ 
+    \end{document}
